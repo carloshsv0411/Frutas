@@ -1,0 +1,48 @@
+<!DOCTYPE html>  
+<html lang="pt-BR">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>FrutasWebApp</title>  
+    <script src="script.js" defer></script>  
+    <link rel="stylesheet" href="style.css">  
+</head>  
+<body>  
+    <div class="container">
+        <div class="card">
+            <h2>Fruta Aleatória</h2>
+            <button onclick="frutaAleatoria()">Consultar Fruta Aleatória</button>
+            <p id="FrutaAleatoria"></p>
+        </div>
+        
+        <div class="card">
+            <h2>Fruta pelo Id</h2>
+            <input type="number" id="frutaId" placeholder="Digite o ID">
+            <button onclick="frutaPeloId()">Consultar Fruta pelo Id</button>
+            <p id="FrutaPorId"></p>
+        </div>
+        
+        <div class="card">
+            <h2>Adicionar nova fruta</h2>
+            <input type="text" id="novaFruta" placeholder="Digite o nome da fruta">
+            <button onclick="adicionarFruta()">Adicionar Fruta</button>
+            <p id="resposta"></p>
+        </div>
+
+        <div class="card">
+            <h2>Atualizar fruta</h2>
+            <input type="number" id="idFrutaAtualizar" placeholder="ID da fruta">
+            <input type="text" id="novoNomeFruta" placeholder="Novo nome da fruta">
+            <button onclick="atualizarFruta()">Atualizar Fruta</button>
+            <p id="respostaAtualizar"></p>
+        </div>
+
+        <div class="card">
+            <h2>Remover fruta</h2>
+            <input type="number" id="idFrutaRemover" placeholder="ID da fruta para excluir">
+            <button onclick="removerFruta()">Excluir Fruta</button>
+            <p id="respostaRemover"></p>
+        </div>
+    </div>
+</body>  
+</html>
